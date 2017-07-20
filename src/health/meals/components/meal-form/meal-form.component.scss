@@ -52,6 +52,13 @@
   &__delete {
     display: flex;
     align-items: center;
+    > div {
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0;
+      }
+    }
     .cancel {
       margin: 0 20px 0 0;
     }
