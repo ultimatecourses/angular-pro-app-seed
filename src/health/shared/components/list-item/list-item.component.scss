@@ -1,0 +1,72 @@
+.list-item {
+  display: flex;
+  border-bottom: 1px solid #c1cedb;
+  transition: all .2s ease-in-out;
+  &:hover {
+    background-color: #f9f9f9;
+  }
+  p {
+    margin: 0;
+  }
+  &__name {
+    flex-grow: 1;
+  }
+  &__ingredients {
+    font-size: 12px;
+    color: #8ea6bd;
+    font-style: italic;
+  }
+  &__delete {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 0;
+    p {
+      margin: 0 10px 0 0;
+      font-size: 14px;
+    }
+  }
+  a {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100%;
+    padding: 12px 20px;
+    font-weight: 400;
+    color: #545e6f;
+    font-size: 16px;
+  }
+}
+%button {
+  outline: 0;
+  cursor: pointer;
+  border: 0;
+}
+.confirm,
+.cancel {
+  @extend %button;
+  padding: 5px 10px;
+  margin: 0 0 0 5px;
+  font-size: 14px;
+}
+.confirm {
+  color: #fff;
+  background: #d73a49;
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+  &:hover {
+    background: darken(#d73a49, 3%);
+  }
+}
+.cancel {
+  background: transparent;
+}
+.trash {
+  @extend %button;
+  border-left: 1px solid #c1cedb;
+  padding: 10px 15px;
+  background: #f6fafd;
+  transition: all .2s ease-in-out;
+  &:hover {
+    background-color: darken(#f6fafd, 2%);
+  }
+}
