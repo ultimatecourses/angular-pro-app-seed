@@ -1,0 +1,38 @@
+.workout-type {
+  display: flex;
+  &__pane {
+    flex: 0 0 30%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 0 15px 0 0;
+    background: #f5f9fd;
+    border: 1px solid #d1deeb;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+    &:hover {
+      background: darken(#f5f9fd, 3%);
+    }
+    &.active {
+      background: darken(#f5f9fd, 3%);
+      img, p {
+        opacity: 1;
+      }
+    }
+    img {
+      opacity: .6;
+      margin: 0 25px 0 0;
+      width: 35px;
+    }
+    p {
+      opacity: .6;
+      margin: 0;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+  }
+}
