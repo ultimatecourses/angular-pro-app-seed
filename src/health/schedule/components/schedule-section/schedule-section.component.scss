@@ -1,0 +1,35 @@
+.schedule-section {
+  &__bar {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #39a1e7;
+    color: #fff;
+  }
+  &__item {
+    cursor: pointer;
+    padding: 10px 40px;
+    display: block;
+    font-weight: 400;
+    color: #545e6f;
+    font-size: 16px;
+    font-style: italic;
+    transition: all .2s ease-in-out;
+    background: url(/img/plus.svg) no-repeat 8px 10px;
+    background-size: 24px 24px;
+    &:first-child {
+      border-bottom: 1px solid #c1cedb;
+    }
+    &.workout {
+      background-image: url(/img/workout.svg);
+    }
+    &.food {
+      background-image: url(/img/food.svg);
+    }
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+}
