@@ -1,0 +1,31 @@
+.controls {
+  position: relative;
+  text-align: center;
+  height: 48px;
+  padding: 12px 0;
+  p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  button {
+    cursor: pointer;
+    position: absolute;
+    top: -1px;
+    outline: 0;
+    background: #f9f9f9;
+    border: 1px solid #c1cedb;
+    width: 50px;
+    height: 50px;
+    transition: all .2s ease-in-out;
+    &:hover {
+      background: darken(#f9f9f9, 5%);
+    }
+    &:first-child {
+      left: -1px;
+    }
+    &:last-child {
+      right: -1px;
+    }
+  }
+}

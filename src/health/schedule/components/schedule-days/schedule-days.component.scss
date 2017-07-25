@@ -1,0 +1,35 @@
+.days {
+  overflow: hidden;
+  border-top: 1px solid #c1cedb;
+  text-align: center;
+  padding: 0 50px;
+}
+.day {
+  outline: 0;
+  width: 14.2%;
+  height: 50px;
+  float: left;
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+  &:hover span {
+    background: #39a1e7;
+    color: #fff;
+  }
+  span {
+    color: #545e6f;
+    display: block;
+    margin: 0 auto;
+    padding: 7px 0 0;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+    &.active {
+      background: #39a1e7;
+      color: #fff;
+    }
+  }
+}
