@@ -17,4 +17,8 @@ export class ScheduleService {
     private store: Store
   ) {}
 
+  updateDate(date: Date) {
+    this.date$.next(date);
+  }
+
 }
