@@ -24,8 +24,16 @@ export interface Workout {
 @Injectable()
 export class WorkoutsService {
 
-  workouts$: Observable<Workout[]> = this.db.list(`workouts/${this.uid}`)
-    .do(next => this.store.set('workouts', next));
+  workouts$: Observable<any> = this.db.list<Workout[]>(`workouts/${this.uid}`)
+      .snapshotChanges()
+      .map(actions => {
+          return actions.map(action => {
+              const data = action.payload.val();
+              const $key = action.payload.key;
+              return {$key, ...data};
+          });
+      })
+      .do(next => this.store.set('workouts', next));
 
   constructor(
     private store: Store,

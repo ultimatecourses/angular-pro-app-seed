@@ -135,13 +135,10 @@ export class ScheduleService {
   }
 
   private getSchedule(startAt: number, endAt: number) {
-    return this.db.list(`schedule/${this.uid}`, {
-      query: {
-        orderByChild: 'timestamp',
-        startAt,
-        endAt
-      }
-    });
+      return this.db.list(`schedule/${this.uid}`,
+          ref => ref.orderByChild('timestamp')
+              .startAt(startAt)
+              .endAt(endAt)).valueChanges();
   }
 
 }
