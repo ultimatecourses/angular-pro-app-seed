@@ -11,15 +11,15 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { SharedModule } from './shared/shared.module';
 
 export const ROUTES: Routes = [
-    {
-        path: 'auth',
-        children: [
-            { path: '', pathMatch: 'full', redirectTo: 'login' }, 
-            { path: 'login', loadChildren: './login/login.module#LoginModule' }, 
-            { path: 'register', loadChildren: './register/register.module#RegisterModule' }
-        ]
-    }
-]
+  {
+    path: 'auth',
+    children: [
+      { path: '', pathMatch: 'full', redirectTo: 'login' },
+      { path: 'login', loadChildren: './login/login.module#LoginModule' },
+      { path: 'register', loadChildren: './register/register.module#RegisterModule' },
+    ]
+  }
+];
 
 export const firebaseConfig: FirebaseAppConfig = {
     apiKey: "AIzaSyDVhnpsUB1jvQkFC4kLBWQfyn8iU7fEW1o",
@@ -31,13 +31,13 @@ export const firebaseConfig: FirebaseAppConfig = {
 };
 
 @NgModule({
-    imports: [
-        CommonModule, 
-        RouterModule.forChild(ROUTES), 
-        AngularFireModule.initializeApp(firebaseConfig), 
-        AngularFireAuthModule, 
-        AngularFireDatabaseModule, 
-        SharedModule.forRoot()
-    ]
+  imports: [
+    CommonModule,
+    RouterModule.forChild(ROUTES),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule,
+    SharedModule.forRoot()
+  ]
 })
 export class AuthModule {}

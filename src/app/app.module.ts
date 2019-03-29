@@ -18,21 +18,21 @@ import { AppNavComponent } from './components/app-nav/app-nav.component';
 export const ROUTES: Routes = [];
 
 @NgModule({
-    imports: [
-        BrowserModule,
-        RouterModule.forRoot(ROUTES), 
-        AuthModule
-    ],
-    declarations: [
-        AppComponent, 
-        AppHeaderComponent, 
-        AppNavComponent
-    ],
-    providers: [
-        Store
-    ],
-    bootstrap: [
-        AppComponent
-    ]
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(ROUTES),
+    AuthModule
+  ],
+  declarations: [
+    AppComponent,
+    AppHeaderComponent,
+    AppNavComponent
+  ],
+  providers: [
+    Store
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule {}
