@@ -1,16 +1,16 @@
 <h1 align="center">
-<img width="40" valign="bottom" src="https://angular.io/assets/images/logos/angular/angular.svg">
+<img width="40" valign="bottom" src="https://ultimatecourses.com/static/icons/angular.svg">
 Angular Pro: Final App Seed
 </h1>
 <h4 align="center">Seed app for fitness manager application using Angular v4+ and AngularFire2.</h4>
 
 ---
 
-<a href="https://ultimateangular.com" target="_blank"><img src="https://ultimateangular.com/assets/img/banners/ua-github.svg"></a>
+<a href="https://ultimatecourses.com" target="_blank"><img src="https://ultimatecourses.com/static/banners/ultimate-angular-leader-old.svg"></a>
 
 ---
 
-> This repo serves as the seed project for the Ultimate Angular Pro course as well as the final solution in a separate branch, come and [learn advanced Angular](https://ultimateangular.com/courses/) architecture!
+> This repo serves as the seed project for the Ultimate Angular Pro course as well as the final solution in a separate branch, come and [learn advanced Angular](https://ultimatecourses.com/courses/angular) architecture!
 
 [Setup and install](#setup-and-install) |
 [Tasks](#tasks) |
