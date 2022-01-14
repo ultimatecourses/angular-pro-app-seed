@@ -32,16 +32,3 @@ export const ROUTES: Routes = [];
   ]
 })
 export class AppModule {}
-
-/*
-const firebaseConfig = {
-  apiKey: "AIzaSyDqxrBJszBCola9BVhMHzqSSYw7JqtUCUw",
-  authDomain: "angular-fitness-app-4965b.firebaseapp.com",
-  databaseURL: "https://angular-fitness-app-4965b-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "angular-fitness-app-4965b",
-  storageBucket: "angular-fitness-app-4965b.appspot.com",
-  messagingSenderId: "190811107468",
-  appId: "1:190811107468:web:63d1286e2e3a1a74888ba9",
-  measurementId: "G-HT9P47SY8R"
-};
-*/
