@@ -1,0 +1,42 @@
+:host {
+  display: block;
+  margin: 50px 0;
+}
+.meal {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 3px 4px rgba(0,0,0,.1);
+  border: 1px solid #c1cedb;
+  border-radius: 3px;
+  overflow: hidden;
+  h1 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    img {
+      margin: 0 10px 0 0;
+    }
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background: #f6fafd;
+    border-bottom: 1px solid #c1cedb;
+  }
+}
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px;
+  font-size: 22px;
+  font-weight: 500;
+  img {
+    margin: 0 10px 0 0;
+  }
+}
