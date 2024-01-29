@@ -15,7 +15,7 @@ Angular Pro: Final App Seed
 [Setup and install](#setup-and-install) |
 [Tasks](#tasks) |
 [Snippets](#snippets) |
-[Firebase Config](#firebase-config) |
+[Firebase Configuration](#firebase-configration) |
 [Resources](#resources)
 
 ## Setup and install
